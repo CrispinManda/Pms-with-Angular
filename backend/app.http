@@ -1,0 +1,34 @@
+POST http://localhost:4400/employee/register
+Content-Type: application/json
+
+{
+    "name": "Daniel Kitheka",
+    "email": "dan@yopmail.com",
+    "password": "12345678"
+}
+
+
+### login 
+POST http://localhost:4400/employee/login
+Content-Type: application/json
+
+{
+    "email": "crispinmanda06@gmail.com",
+    "password": "12345678"
+}
+
+### fetching employees
+GET http://localhost:4400/employee
+Content-Type: application/json
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbXBsb3llZV9pZCI6ImRmZTI4ZDA3LTJhM2EtNDdmNC05MDBjLWNmMzc2ZTE5OThkYiIsIm5hbWUiOiJEYW5pZWwgS2l0aGVrYSIsImVtYWlsIjoiZGFuQHlvcG1haWwuY29tIiwicm9sZSI6ImVtcGxveWVlIiwiaWF0IjoxNjk5NDM3NTY1LCJleHAiOjE2OTk0NDExNjV9.2-FK-BOh1TLzkHHTxX3eF3XLMV79ta1-LUNtoIaFB8E
+
+
+### fetching one employee
+GET http://localhost:4400/employee/04bc9d80-7ed5-4239-be78-596e0809c97f
+Content-Type: application/json
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbXBsb3llZV9pZCI6IjA0YmM5ZDgwLTdlZDUtNDIzOS1iZTc4LTU5NmUwODA5Yzk3ZiIsIm5hbWUiOiJDcmlzcGluIE1hbmRhIiwiZW1haWwiOiJjcmlzcGlubWFuZGEwNkBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2OTk2ODYzNjUsImV4cCI6MTY5OTY4OTk2NX0.c-rTxq_4t2gdudv09FRG_n_q7iZ5m12SCbKBxctN4J8
+
+### checking user details
+GET http://localhost:4400/employee/check_user_details
+Content-Type: application/json
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbXBsb3llZV9pZCI6IjA0YmM5ZDgwLTdlZDUtNDIzOS1iZTc4LTU5NmUwODA5Yzk3ZiIsIm5hbWUiOiJDcmlzcGluIE1hbmRhIiwiZW1haWwiOiJjcmlzcGlubWFuZGEwNkBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2OTk2ODYzNjUsImV4cCI6MTY5OTY4OTk2NX0.c-rTxq_4t2gdudv09FRG_n_q7iZ5m12SCbKBxctN4J8
