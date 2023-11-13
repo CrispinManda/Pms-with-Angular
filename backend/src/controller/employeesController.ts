@@ -49,6 +49,7 @@ export const registerEmployee = async(req:Request, res: Response) =>{
     }
 }
 
+
 export const loginEmployee = async(req:Request, res: Response) =>{
     try {
         const {email, password} = req.body

@@ -2,8 +2,8 @@ POST http://localhost:4400/employee/register
 Content-Type: application/json
 
 {
-    "name": "Daniel Kitheka",
-    "email": "dan@yopmail.com",
+    "name": "user5 user5",
+    "email": "user5@gmail.com",
     "password": "12345678"
 }
 
@@ -32,3 +32,62 @@ token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbXBsb3llZV9pZCI6IjA0YmM5ZDgwLTdl
 GET http://localhost:4400/employee/check_user_details
 Content-Type: application/json
 token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbXBsb3llZV9pZCI6IjA0YmM5ZDgwLTdlZDUtNDIzOS1iZTc4LTU5NmUwODA5Yzk3ZiIsIm5hbWUiOiJDcmlzcGluIE1hbmRhIiwiZW1haWwiOiJjcmlzcGlubWFuZGEwNkBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2OTk2ODYzNjUsImV4cCI6MTY5OTY4OTk2NX0.c-rTxq_4t2gdudv09FRG_n_q7iZ5m12SCbKBxctN4J8
+
+
+###
+#admin assign project
+
+POST http://localhost:4400/project/assignProject
+Content-Type: application/json
+
+{
+   
+    "projectName": "BackgroundSerices",
+    "projectDescription": "build company chatbot",
+    "endDate": "2023-12-9",
+    "AssignedUserEmail": "jonah@yopmail.com",  
+    "AssignedUserName": "Jonah Kiptoo"  
+}
+
+###
+GET  http://localhost:8000/user/homepage
+token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjkwMmFmNDc0LWVkMjgtNGYwMy1hMTdkLWNhOTE4YzY4NWY0NSIsIm5hbWUiOiJ1c2VyMiIsImVtYWlsIjoidXNlcjJAZ21haWwuY29tIiwicm9sZSI6InVzZXIiLCJzdGF0dXMiOiIwIiwiaWF0IjoxNjYxOTE1NjczLCJleHAiOjE2NjE5MTkyNzN9.OOeFKRapCOhoUDIDTvflLeJx5nHlbHihow52jAdn_M8
+
+
+
+# projects
+###
+POST http://localhost:4400/project/newproject
+Content-Type: application/json
+
+{
+    "name":"project3",
+    "description":"This is project HN2",
+    "end_date": "Aug 12 2022",
+    "assigned_user_email":"jonah@yopmail.com"
+}
+
+###
+###
+POST http://localhost:4400/project/newproject
+Content-Type: application/json
+
+{   "name":"project 7",
+    "description":"Another Project",
+    "end_date": "Aug 12 2024",
+    "assigned_user_email":"user6@gmail.com"
+
+    }
+
+###
+GET http://localhost:8000/project/deleteProject/7367ae5b-fc02-4295-88d2-5c70169fc608
+
+
+###
+GET  http://localhost:4400/project/projects
+
+###
+GET  http://localhost:8000/project/project/ghjhjkk@gmail.com
+
+###
+Get http://localhost:8000/project/complete/54cac16d-c214-4c22-8121-77d451800310
